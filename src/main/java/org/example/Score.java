@@ -64,6 +64,7 @@ public class Score {
                 }
             }
             case 4 -> winner = "player A";
+            default -> throw new RuntimeException("Unsupported value: " + playerAScore + " for score");
         }
 
     }
@@ -81,6 +82,7 @@ public class Score {
                 }
             }
             case 4 -> winner = "player B";
+            default -> throw new RuntimeException("Unsupported value: " + playerAScore + " for score");
         }
     }
 
